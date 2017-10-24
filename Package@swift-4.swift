@@ -21,7 +21,7 @@ import PackageDescription
 
 let package = Package(
     name: "Zlib",
-    pkgConfig: "libz",
+    pkgConfig: "zlib",
     providers: [
  //       .apt(["libz-dev"])
     ],
