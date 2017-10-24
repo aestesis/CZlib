@@ -14,7 +14,7 @@
  * limitations under the License.
  **/
  
- module CZlib {
+ module Zlib {
     header "shim.h"
     link "z"
     export *
