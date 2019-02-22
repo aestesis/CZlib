@@ -20,16 +20,12 @@ import PackageDescription
 
 let package = Package(
     name: "Zlib",
-    pkgConfig: "zlib",
-    providers: [
- //       .apt(["libz-dev"])
-    ],
     products: [
         .library(name: "Zlib",targets: ["Zlib"]),
         ],
     dependencies: [
     ],
     targets: [
-        .systemLibrary(name: "Zlib",dependencies: []),
+        .systemLibrary(name: "Zlib")
     ]
 )
