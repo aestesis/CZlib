@@ -1,3 +1,5 @@
+// swift-tools-version:4.2
+
 /**
  * Copyright IBM Corporation 2016, 2017
  *
@@ -20,6 +22,14 @@ let package = Package(
     name: "Zlib",
     pkgConfig: "zlib",
     providers: [
-//        .Apt("libz-dev")
+ //       .apt(["libz-dev"])
+    ],
+    products: [
+        .library(name: "Zlib",targets: ["Zlib"]),
+        ],
+    dependencies: [
+    ],
+    targets: [
+        .systemLibrary(name: "Zlib",dependencies: []),
     ]
 )
