@@ -26,6 +26,13 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .systemLibrary(name: "Zlib")
+        .systemLibrary(
+            name: "Zlib",
+            pkgConfig: "zlib1g-dev",
+            providers: [
+                .apt(["zlib1g-dev"]),
+                .brew(["zlib1g-dev"]),
+            ]
+        )
     ]
 )
