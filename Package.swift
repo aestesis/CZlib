@@ -22,7 +22,7 @@ let package = Package(
     name: "Zlib",
     products: [
         .library(name: "Zlib",targets: ["Zlib"]),
-        ],
+    ],
     dependencies: [
     ],
     targets: [
